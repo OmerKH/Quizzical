@@ -166,6 +166,7 @@ function Quiz(props) {
           </section>
         </div>
       )}
+      <img src={bottomBlob} alt="blob" className="blu-blob" />
     </div>
   );
 }
