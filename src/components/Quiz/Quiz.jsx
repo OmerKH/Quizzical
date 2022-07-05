@@ -127,9 +127,9 @@ function Quiz(props) {
 
   return (
     <div className="quiz">
+      <img src={topBlob} alt="blob" className="yel-blob" />
       {!start ? (
         <div className="container">
-          <img src={topBlob} alt="blob" className="yel-blob" />
           <h2 className="titel">Quizzical</h2>
           <p>Answer 5 questions correct to win</p>
           <button className="start-btn" onClick={startGame}>
@@ -166,7 +166,7 @@ function Quiz(props) {
           </section>
         </div>
       )}
-      {/* <img src={bottomBlob} alt="blob" className="blu-blob" /> */}
+      <img src={bottomBlob} alt="blob" className="blu-blob" />
     </div>
   );
 }
