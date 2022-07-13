@@ -1,4 +1,4 @@
-Quizzical
+# Quizzical
 
 https://quizzical-scrimba.vercel.app/
 
