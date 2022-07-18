@@ -4,6 +4,7 @@ import Question from "../Question/Question";
 import topBlob from "../../images/blob 5.png";
 import bottomBlob from "../../images/blobs.png";
 import "./Quiz.scss";
+import Home from "../Home/Home";
 
 function Quiz(props) {
   const [game, setGame] = useState(false);
@@ -129,14 +130,7 @@ function Quiz(props) {
     <div className="quiz">
       <img src={topBlob} alt="blob" className="yel-blob" />
       {!start ? (
-        <div className="container">
-          <h2 className="titel">Quizzical</h2>
-          <p>Answer 5 questions correct to win</p>
-          <button className="start-btn" onClick={startGame}>
-            Start
-          </button>
-          <img src={bottomBlob} alt="blob" className="blu-blob" />
-        </div>
+        <Home startGame={startGame} />
       ) : (
         <div className="gameOn">
           {questions.map((question) => (
