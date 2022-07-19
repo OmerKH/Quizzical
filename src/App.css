@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f7fb;
+  font-family: "Inter", sans-serif;
+}
+button {
+  padding: 2px;
+  margin: 2px;
+}
+
+.titel {
+  margin: 0;
+}
+
+.quizller {
+  font-family: "Karla", sans-serif;
+  color: #293264;
+}
