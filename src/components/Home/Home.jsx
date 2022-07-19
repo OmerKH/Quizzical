@@ -1,5 +1,6 @@
 import React from "react";
 import bottomBlob from "../../images/blobs.png";
+import "./Home.scss";
 
 function Home({ startGame }) {
   return (
