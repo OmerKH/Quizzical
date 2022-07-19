@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
+import shuffle from "../../util/shuffle";
 import Question from "../Question/Question";
 import topBlob from "../../images/blob 5.png";
 import bottomBlob from "../../images/blobs.png";
-import "./Quiz.scss";
 import Home from "../Home/Home";
+import "./Quiz.scss";
 
 function Quiz(props) {
   const [game, setGame] = useState(false);
@@ -12,10 +13,6 @@ function Quiz(props) {
   const [score, setScore] = useState(0);
   const [questions, setQuestions] = useState([]);
   const [checked, setChecked] = useState(false);
-
-  const shuffle = (array) => {
-    return array.sort(() => Math.random() - 0.5);
-  };
 
   const getQuiz = async () => {
     const res = await fetch("https://opentdb.com/api.php?amount=5");
