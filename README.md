@@ -1,6 +1,6 @@
 # Quizzical
 
-https://quizzical-scrimba.vercel.app/
+Using OPTD:
 
 [Open Trivia Database API](https://opentdb.com/)
 
