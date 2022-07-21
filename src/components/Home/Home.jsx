@@ -1,5 +1,4 @@
 import React from "react";
-import bottomBlob from "../../images/blobs.png";
 
 function Home({ startGame }) {
   return (
@@ -9,7 +8,6 @@ function Home({ startGame }) {
       <button className="start-btn" onClick={startGame}>
         Start
       </button>
-      <img src={bottomBlob} alt="blob" className="blu-blob" />
     </div>
   );
 }
